@@ -2,6 +2,7 @@ require 'cuba'
 require 'cuba/safe'
 require 'cuba'
 require 'cuba/render'
+require 'tilt/haml'
 require 'haml'
 
 Cuba.use Rack::Session::Cookie, secret: 'PLACEHOLDER'
@@ -14,7 +15,7 @@ Cuba.settings[:render][:template_engine] = 'haml'
 Cuba.define do
   on get do
     on 'hello' do
-      res.write 'Hello there!'
+      res.write view('landing')
     end
 
     on root do
