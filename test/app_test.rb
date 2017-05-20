@@ -1,5 +1,5 @@
 require 'cuba/test'
-require_relative '../app/app.rb'
+require './app.rb'
 
 scope do
   test "Homepage" do
