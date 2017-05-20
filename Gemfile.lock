@@ -1,0 +1,25 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    clap (1.0.0)
+    cuba (3.8.0)
+      rack (>= 1.6.0)
+    cutest (1.2.3)
+      clap
+    rack (2.0.3)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    tilt (2.0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba
+  cutest
+  rack
+  rack-test
+  tilt
+
+BUNDLED WITH
+   1.14.6
