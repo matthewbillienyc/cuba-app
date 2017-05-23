@@ -1,0 +1,15 @@
+.fun-things
+  %p Post a few fun thing!
+  %form.fun-things-form{action: 'new_thing', method: 'post'}
+    
+    %label Your thing:
+    %input{type: 'text', name: 'thing'}
+      
+    %label Description
+    %input{type: 'text', name: 'description'}
+
+    %input{type: 'submit'}
+      
+  %ul.fun-things-list
+    - @fun_things.each do |thing, desc|
+      %li #{thing}: #{desc}
