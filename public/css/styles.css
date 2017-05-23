@@ -1,0 +1,14 @@
+body {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+#content {
+    margin: 100px;
+}
+
+.title {
+    color: blue;
+}
+
+.info {
+}
